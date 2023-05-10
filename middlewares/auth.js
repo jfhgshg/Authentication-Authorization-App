@@ -70,7 +70,7 @@ exports.isAdmin = (req,res,next) => {
         if(req.user.role !== "Admin") {
             return res.status(401).json({
                 success:false,
-                message:'THis is a protected route for admin',
+                message:'This is a protected route for admin',
             });
         }
         next();
