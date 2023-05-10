@@ -52,7 +52,7 @@ exports.isStudent = (req,res,next) => {
             if(req.user.role !== "Student") {
                 return res.status(401).json({
                     success:false,
-                    message:'THis is a protected route for students',
+                    message:'This is a protected route for students',
                 });
             }
             next();
